@@ -1,0 +1,66 @@
+p {
+    margin: 0px 15px;
+}
+
+.pageTitle {
+    margin-top: 80px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+#searchContainer {
+    display: flex;
+    justify-content: center;
+}
+
+#inputSearchBreed {
+    width: 300px;
+}
+
+.footer {
+    width: 100%;
+    padding: 50px;
+    text-align: center;
+}
+
+.content {
+    max-width: 960px;
+    margin:40px auto;
+    text-align: center;
+}
+
+.sectionDescription {
+    margin: 20px 0px;
+}
+
+.searchMargin {
+    margin: 10px;
+}
+
+/* Masonry */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.image-gallery {
+  column-gap: 1em;
+  margin-top: 30px;
+}
+
+.image {
+  margin: 0 0 1.5em;
+  display: inline-block;
+  width: 100%;
+}
+
+.image img {
+  width: 100%;
+}
+
+.image:hover {
+    box-shadow: 0px 0px 19px 5px #aaaaaa;
+    cursor: pointer;
+}
