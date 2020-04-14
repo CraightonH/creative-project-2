@@ -10,24 +10,33 @@
         <script type="text/javascript" src="js/site.js"></script>
     </head>
 	<body>
-        <div class="content">
-            <h1 class="pageTitle">They're Good Dogs, Brent</h1>
+        <div class="content bg">
+            <h1 class="pageTitle grid"><img id="titleImgLeft" class="titleImage grid-item" src="images/bone-157272_640.png" /><span class="grid-item">They're Good Dogs, Brent</span><img id="titleImgRight" class="titleImage grid-item" src="images/bone-157272_640.png" /></h1>
             <div class="sectionDescription">
                 <p>
                     Search for random images of different dog breeds
                 </p>
             </div>
         </div>
-        <div id="searchContainer">
+        <div id="searchContainer" class="flex">
             <input id="inputSearchBreed" class="searchMargin" placeholder="Breed" type="text" list="dlBreeds" />
             <datalist id="dlBreeds"></datalist>
             <button id="btnSearchBreed" class="searchMargin" onclick="searchBreeds()">Search</button>
         </div>
+        <div class="flex">
+            <span class="searchMargin">Results:</span> 
+            <select class="searchMargin" id="selectSearchBreed">
+                <option value="5">5</option>
+                <option value="10">10</option>
+                <option selected value="20">20</option>
+                <option value="50">50</option>
+            </select>
+        </div>
         <div id="homepageImageContainer" class="image-gallery">
 
         </div>
-        <div class="footer bg-light">
-            See this project on <a target="_blank" href="https://github.com/CraightonH/creative-project-1">GitHub</a>
+        <div class="footer bg">
+            See this project on <a target="_blank" href="https://github.com/CraightonH/creative-project-2">GitHub</a>
         </div>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

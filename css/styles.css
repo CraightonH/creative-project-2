@@ -2,20 +2,33 @@ p {
     margin: 0px 15px;
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.grid-item {
+    margin: auto;
+}
+
 .pageTitle {
-    margin-top: 80px;
+    padding-top: 40px;
     margin-bottom: 20px;
     margin-right: 20px;
     margin-left: 20px;
 }
 
-#searchContainer {
+.flex {
     display: flex;
     justify-content: center;
 }
 
 #inputSearchBreed {
     width: 300px;
+}
+
+.titleImage {
+    width: 60px;
 }
 
 .footer {
@@ -25,9 +38,9 @@ p {
 }
 
 .content {
-    max-width: 960px;
-    margin:40px auto;
+    margin-bottom: 20px;
     text-align: center;
+    padding-bottom: 10px;
 }
 
 .sectionDescription {
@@ -36,6 +49,10 @@ p {
 
 .searchMargin {
     margin: 10px;
+}
+
+.bg {
+    background-color: #8e480080;
 }
 
 /* Masonry */
@@ -60,7 +77,3 @@ p {
   width: 100%;
 }
 
-.image:hover {
-    box-shadow: 0px 0px 19px 5px #aaaaaa;
-    cursor: pointer;
-}

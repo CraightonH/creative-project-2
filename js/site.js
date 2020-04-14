@@ -36,29 +36,25 @@ function searchBreeds() {
     while(imgContainer.hasChildNodes()) {
         imgContainer.removeChild(imgContainer.firstChild);
     }
+    var searchURL = "";
     var selectedBreed = document.getElementById("inputSearchBreed").value;
+    var count = document.getElementById("selectSearchBreed").value;
     var dashIndex = selectedBreed.indexOf("-");
     if (dashIndex > 0) {
         var breed = selectedBreed.substring(0, dashIndex - 1);
         var subbreed = selectedBreed.substring(dashIndex + 2, selectedBreed.length);
-        fetch("https://dog.ceo/api/breed/" + breed + "/" + subbreed + "/images/random/20")
-        .then((response) => {
-            return response.json();
-        })
-        .then((data) => {
-            console.log(data);
-            showSearchResults(data.message);
-        });
+        searchURL = "https://dog.ceo/api/breed/" + breed + "/" + subbreed + "/images/random/" + count;
     } else {
-        fetch("https://dog.ceo/api/breed/" + selectedBreed + "/images/random/20")
-        .then((response) => {
-            return response.json();
-        })
-        .then((data) => {
-            console.log(data);
-            showSearchResults(data.message);
-        });
+        searchURL = "https://dog.ceo/api/breed/" + selectedBreed + "/images/random/" + count
     }
+    fetch(searchURL)
+    .then((response) => {
+        return response.json();
+    })
+    .then((data) => {
+        console.log(data);
+        showSearchResults(data.message);
+    });
 }
 
 function showSearchResults(imageURLs) {
